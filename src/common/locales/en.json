@@ -1,0 +1,30 @@
+{
+    "App Title": "VTMS Research Platform",
+
+
+    "Login Label Field": "Please enter the survey ID or participant ID that has been assigned to you.",
+    "Login Button": "Sign In",
+    "Back": "Sign in as a study participant",
+    "Login Coordinator Button": "I have a coordinator username",
+    "Coordinator Button": "Sign in as a study participant",
+
+    
+    "Coordinator Login Label": "If you are a research coordinator that has been assigned a username and password, enter that here.",
+
+
+    "Password Screen Title": "Enter Password",
+    "Password Screen Label": "Enter your participant password to continue.",
+    "Password Login Button": "Login",
+    "Trial Button": "Contact Trial Support",
+
+
+    "Set Password Title": "Set Password",
+    "Set Password Label": "Set a password to protect your account.  Your password should be at least 6 letters or numbers long.",
+    "Set Password Button": "Set Password",
+
+
+    "FaceID Title": "Enable FaceID",
+    "FaceId Label": "Would you like to enable FaceID to login faster in the future?",
+    "FaceId Button": "Yes, enable faster login",
+    "FaceId Skip Button": "Skip"
+}

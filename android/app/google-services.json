@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "191289410764",
+    "project_id": "laina-vtms-reactapp",
+    "storage_bucket": "laina-vtms-reactapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191289410764:android:037176620458fa51bd2e69",
+        "android_client_info": {
+          "package_name": "com.lainaent.lainavtms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191289410764-7eu7mvqv1s2te88pl5dk8fa6icqkdm37.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lainaent.lainavtms",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "191289410764-d3q93cpbom2c51kuf8quusf2gkllhqrf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDT7THq3uPAdRUhFwWUtlmj91WF90DA6Ek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191289410764-d3q93cpbom2c51kuf8quusf2gkllhqrf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "191289410764-2ep9a0oslnha6coiffarvj5tdgff20v0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.Liana-Field"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

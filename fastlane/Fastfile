@@ -1,0 +1,33 @@
+before_all do 
+    ensure_git_branch
+    ensure_git_status_clean
+    git_pull
+end
+
+platform :android do
+    lane :beta do
+        desc "Creating beta build"
+        gradle(task: "clean",  project_dir: "./android/")
+        gradle(task: "assemble", build_type: "Release", project_dir: "./android")
+        zip(path: "android/app/build/outputs/apk/release/app-release.apk", output_path: 'app-release.zip')
+        deploygate(
+            api_token: "357cc067-f1d6-4a3c-9f7c-05a49fef8e7b",
+            user: "TestBeta",
+            apk: "android/app/build/outputs/apk/release/app-release.apk",
+            message: "App Beta Version",    
+        )
+    end    
+end
+
+
+platform :ios do
+    desc 'Creating beta build'
+    lane :beta do
+      match(app_identifier: 'com.app.bundle', type: 'development', readonly: true)  
+      match(app_identifier: 'com.app.bundle', type: 'appstore', readonly: true)
+      increment_build_number(xcodeproj: 'ios/Liana_Field.xcodeproj')
+      gym(scheme: 'ios/Liana_Field', project: 'ios/Liana_Field.xcodeproj')
+    end
+
+
+end
